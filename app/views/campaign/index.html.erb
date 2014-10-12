@@ -1,0 +1,43 @@
+
+<div clas="row">
+	<div class="large-12 columns">
+		<h1>
+			<a>
+					Campaign List
+			</a>
+		</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="large-12 columns">
+		<table>
+		<thead>
+			<tr>
+			<th>
+				Campaigns
+			</th>
+			<th>
+				
+
+			</th>			
+							
+			</tr>
+		</thead>
+		<tbody>
+		<%@campaign.each do |campaign|%>
+		<tr>
+			<td>
+				<%=campaign.campaign.titleize%>
+			</td>
+			<td>
+				<%=link_to "Candidates List" ,campaign_candidate_lists_path(:campaign=>campaign.campaign),:class=>"large-6 button success"%>
+			</td>	
+												
+		</tr>
+		<%end%>
+
+		</tbody>
+		</table> 
+	</div>
+
+</div>

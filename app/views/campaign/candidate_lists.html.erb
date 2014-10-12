@@ -1,0 +1,48 @@
+
+<div clas="row">
+	<div class="large-12 columns">
+		<h1>
+			<a>
+					Candidates List
+			</a>
+		</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="large-12 columns">
+		<table>
+		<thead>
+			<tr>
+			<th>
+				Candidate Name
+			</th>
+			<th>
+				
+			 Scores
+			</th>			
+			<th> 
+				The Number of messages(Not counted as score)
+			</th>			
+			</tr>
+		</thead>
+		<tbody>
+		<%@candidates.each do |candidates|%>
+		<tr>
+			<td>
+				<%=candidates.choice%>
+			</td>
+			<td>
+				<%=score(candidates.campaign,candidates.choice)%>
+			</td>
+			<td>
+				<%=number_of_message(candidates.campaign,candidates.choice)%>
+			</td>				
+												
+		</tr>
+		<%end%>
+
+		</tbody>
+		</table> 
+	</div>
+
+</div>

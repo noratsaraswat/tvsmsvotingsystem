@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "Voting System" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+  <div class="row">
+    <nav class="top-bar" data-topbar role="navigation">
+     <ul class="title-area"> 
+        <li class="name"> 
+            <h1>
+              <a href="/">
+                My Site
+              </a>
+            </h1>
+        </li>
+     </ul>
+    </nav>
+      <div class="row">
+        <%= yield %>
+      </div>
+      <%= javascript_include_tag "application" %>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vote: 
+  campaign: MyString
+  validity: MyString
+  choice: MyString
+  conn: MyString
+  msisdn: MyString
+  guid: MyString
+  shortcode: MyString
+
+two:
+  vote: 
+  campaign: MyString
+  validity: MyString
+  choice: MyString
+  conn: MyString
+  msisdn: MyString
+  guid: MyString
+  shortcode: MyString

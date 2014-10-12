@@ -1,5 +1,19 @@
 == README
 
+
+This is simple TV SMS voting campaigns site where user can see campaign and there list of all canditates.
+
+Setup :-
+	web app and a ruby script for uploading txt file data to database.
+	cd tvsmsvotingsystem
+	rake db:create
+	rake db:migrate
+	ruby script:-
+		ruby upload_data.rb
+		rails s 
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
